@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Assignment 1 -- using 960 grid</title>
+
+    <link rel="stylesheet" href="css/960.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a7baf7b7b.js"></script>
+
+</head>
+
+<body>
+    <ul class="nav_bar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+
+    </ul>
+    <div class="heading_board">
+        <h1>Chinmay</h1>
+    </div>
+    <!-- Page Content -->
+    <div class="container_12">
+        <div class="grid_12">
+            <h1>Hero Section</h1>
+        </div>
+        <div class="grid_4">
+            <h3>three</h3>
+        </div>
+        <div class="grid_4">
+            <h3>column</h3>
+        </div>
+
+        <div class="grid_4">
+            <h3>section</h3>
+        </div>
+
+        <div class="grid_6" style="height: 100px">
+            divide section
+        </div>
+        <div class="grid_6">
+            divideded section
+            <div class="row">
+                item 1
+            </div>
+            <div class="row">
+                item 2
+            </div>
+            <div class="row">
+                item 3
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>Footer</h4>
+        <div class="external_links">
+            <h1>external links</h1>
+        </div>
+        <div class="links">
+            <ul style="list-style-type: none">
+                <li>
+                    <a href="facebook.com">facebook-----<i class="fab fa-facebook-square"></i></a><br>
+                </li>
+                <li>
+                    <a href="facebook.com">email-----<i class="fas fa-envelope"></i></a><br>
+                </li>
+                <li>
+                    <a href="facebook.com">twitter-----<i class="fab fa-twitter"></i></a><br>
+                </li>
+                <li>
+                    <a href="facebook.com">call-----<i class="fab fa-facebook-square"></i></a><br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 190) { //use `this`, not `document`
+                $('.heading_board').css({
+                    'display': 'none'
+                });
+            }
+            if ($(this).scrollTop() < 90) { //use `this`, not `document`
+                $('.heading_board').css({
+                    'display': 'block'
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
